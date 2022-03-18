@@ -25,9 +25,11 @@ html, body, .app{
   margin: 0;
   font-family: Arial;
   color: #444;
+  width: 100%;
+  overflow-x: hidden
 }
 body{
-  background-color: #1a467e
+  background-color: #1a467e;
 }
 div, span,h1, h2, h3, h4, h5, h6, p{
 	margin: 0;
@@ -48,7 +50,7 @@ a:hover{
   background-color: #f8d48220;
 }
 .cover{
-  width: 100%;
+  max-width: 100%;
   height: 450px;
   background: url('./assets/images.jpg');
   background-position: 30% 80%;
@@ -58,5 +60,19 @@ a:hover{
   width: 100%;
   padding: 0 150px 50px;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px){
+  .cover{
+    height: 200px
+  }
+  .content{
+    padding: 0 0 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .content{
+    padding: 0 0 15px;
+  }
 }
 </style>

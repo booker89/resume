@@ -107,7 +107,6 @@ export default {
 .work > .work_item{
   width: 51%; 
   padding: 15px 0;
-
 }
 .work > .work_item > h3{
   text-indent: 2em;
@@ -171,12 +170,54 @@ li{
 .text > span{
   font-size: 18px;
   color: #c2bd60;
-  padding: 10px 0
+  padding: 10px 0;
+ 
 }
 .text > p{
   font-size: 14px;
   color: #fff;
   font-weight: 50;
+}
+
+
+@media screen and (max-width: 767px){
+  .title_wrap{
+    padding-top: 15px;
+  }
+  .work > .work_item{
+    width: 100%; 
+    padding: 5px 0;
+  }
+  .wrap{
+    padding: 10px 0 0 0;
+    flex-wrap: wrap
+  }
+  .items{
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .text{
+    text-align: center
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+   .work > .work_item{
+    width: 90%; 
+  }
+  .wrap{
+    padding: 10px 0 0 0;
+    flex-wrap: wrap
+  }
+  .items{
+    width: 45%;
+    margin: 0 0px 10px 0;
+  }
+  .items:first-child{
+    margin-right: 15px;
+  }
+  .text{
+    text-align: center
+  }
 }
 </style>
   

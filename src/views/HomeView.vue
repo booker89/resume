@@ -92,7 +92,7 @@ export default {
 
 <style scoped>
 .title_wrap{
-  padding-top: 50px
+  padding-top: 50px;
 }
 
 .title > h2{
@@ -100,18 +100,19 @@ export default {
   color: #344648;
   font-size: 20px;
   text-align: center;
-  padding: 10px 0
+  padding: 10px 0;
+ 
 }
 .info-wrap{
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   background-color: #fff;
   padding: 20px 0
 }
 .info-wrap > .personal_img{
-  width: 150px;
+  width: 10%;
 }
 .info-wrap > .personal_img > img{
   display: block;
@@ -119,8 +120,8 @@ export default {
   border-radius: 50%
 }
 .info-wrap > .info_content{
-  width: 300px;
-  margin-left: 30px
+  width: 50%;
+  margin-left: 25px
 }
 .info-wrap > .info_content > .content{
   display: flex;
@@ -144,7 +145,7 @@ export default {
 
 }
 .about_content > h3{
-  padding: 15px 0 5px 0
+  padding: 15px 0 5px 0;
 }
 .about_content > p{
   text-indent: 2em;
@@ -157,14 +158,18 @@ export default {
   background-color: #fff;
   display: flex;
   justify-content: center;
-  padding: 20px 0
+  padding: 20px 0;
 }
 .graph > .left{
-  margin-right: 50px
+  width: 25%;
+  margin-right: 20px
+}
+.graph > .right{
+  width: 25%;
 }
 
 .graph_out{
-  width: 350px;
+  max-width: 350px;
   height: 16px;
   padding: 2px;
   border: 2px solid #2c4f54;
@@ -177,15 +182,61 @@ export default {
   left: 3px;
 }
 .html{
-  width: 290px;
+  max-width: 290px;
 }
 .css{
-  width: 270px;
+  max-width: 270px;
 }
 .javascript{
-  width: 250px;
+  max-width: 250px;
 }
 .vue{
-  width: 150px;
+  max-width: 150px;
 }
+
+@media screen and (max-width: 767px){
+  .title_wrap{
+    padding-top: 15px;
+  }
+  .info-wrap{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .info-wrap > .personal_img{
+    width: 40%;
+  }
+  .info-wrap > .info_content{
+    width: 100%;
+    margin: 15px 0 0 0;
+    padding: 0 10px 0 90px
+  }
+  .about_content > h3{
+    text-align: center;
+  }
+  .graph{
+    flex-wrap: wrap;
+  }
+  .graph > .left, 
+  .graph > .right{
+    width: 100%;
+    padding: 0 15px 0 15px;
+  }
+  .graph > .left{
+    margin-right: 0px
+  }
+  
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .graph{
+    flex-wrap: wrap;
+  }
+  .graph > .left{
+    width: 51%;
+    margin-right: 0px
+  }
+  .graph > .right{
+    width: 51%;
+  }
+}
+
 </style>
