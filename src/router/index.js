@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import WorkView from '../views/WorkView.vue'
 
 Vue.use(VueRouter)
 
@@ -11,11 +10,6 @@ const routes = [
     name: 'home',
     component: HomeView
   },
-  {
-    path: '/work',
-    name: 'wbout',
-    component: WorkView
-  }
 ]
 
 const router = new VueRouter({

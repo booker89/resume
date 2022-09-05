@@ -12,6 +12,7 @@ div{
   box-sizing: border-box;
   font-size: 10px;
   background-color: #f8d482;
+  background-color: #ccc;
   color: #000;
 }
 </style>
