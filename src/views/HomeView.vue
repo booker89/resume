@@ -2,15 +2,15 @@
   <div class="title_wrap">
     <div id="home" class="info-wrap">
       <div class="personal_img">
-        <img src ="../assets/me.jpg"/> 
+        <img src ="../assets/me3.jpg"/> 
       </div>
       <div class="info_content">
         <div class="content">
           <h3>王卉旻 Mandy</h3>
           </br>
-          <p>有管理政府單位各式專案的經驗，也曾擔任過前端工程師，所以更能夠從不同角度出發思考需求，以及會思考如何加速數據變現的腳步</p>
+          <p>有管理政府單位各式專案的經驗，也曾擔任過前端工程師，所以能從不同角度出發思考，作為往後專案及產品經理職務所用。</p>
           </br>
-          <p>個性開朗，心思細膩成熟，勇於面對新的挑戰，樂於接觸學習新的事物，會盡力完成被賦予的責任。</p>
+          <p>個性開朗，心思細膩成熟、善於發問與傾聽，團隊配合度高且勇於面對新的挑戰，樂於接觸學習新的事物，會盡力完成被賦予的責任。</p>
           </br>
           <button class="morebtn" v-on:click="scrollToElement({behavior: 'smooth'},'#wrap_info')">了解更多</button>
         </div>
@@ -34,6 +34,8 @@ import Experience from '@/components/Experience.vue';
 import Works from '@/components/Works.vue';
 import Skill from '@/components/Skill.vue';
 import Info from '@/components/Info.vue';
+
+
 export default {
   components: {
       Footer,
@@ -41,7 +43,7 @@ export default {
       Experience,
       Works,
       Skill,
-      Info
+      Info,
   },
   data(){
     return {}
@@ -60,30 +62,26 @@ export default {
 </script>
 
 <style>
-#wrap_info,#wrap_experience,#wrap_hobbies,#wrap_skill,#wrap_works{
+#wrap_info,#wrap_experience,#wrap_hobbies,#wrap_skill,#wrap_works,#wrap_experience{
 	width: 100%;
   padding: 100px 150px;
 	margin: auto;
 }
-#wrap_experience:after{
-  content: '';
-  display: block;
-  width: 100%;
-  height: 0px;
-  clear: both;
-}
+
 #wrap_info h1,
 #wrap_experience h1,
 #wrap_hobbies h1,
 #wrap_skill h1,
-#wrap_works h1{
+#wrap_works h1,
+#wrap_experience h1{
   color: #F7E5A1
 }
 #wrap_info .title_boder,
 #wrap_experience .title_boder,
 #wrap_hobbies .title_boder,
 #wrap_skill .title_boder,
-#wrap_works .title_boder{
+#wrap_works .title_boder,
+#wrap_experience .title_boder{
   width: 100px;
   border-bottom: 5px solid #F7E5A1;
 }
@@ -107,12 +105,12 @@ export default {
   padding: 70px 0;
 }
 .personal_img{
-  width: 330px;
-  height: 325px
+  width: 300px;
+  margin-right: 60px
 }
 .personal_img > img{
   display: block;
-  height: 100%;
+  width: 100%;
   border-radius: 50%;
 
 }
@@ -155,14 +153,15 @@ export default {
   }
   .info-wrap > .info_content{
     width: 100%;
-    padding: 20px
+    padding: 20px;
   }
   .personal_img{
-    width: 230px;
-    height: 225px;
+    width: 200px;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    margin: 0
   }
+
   #home h3{
     text-align: center
   }
@@ -175,7 +174,7 @@ export default {
     left: 50%;
     transform: translate(-50%,10%);
   }
-   #wrap_info,#wrap_experience,#wrap_hobbies,#wrap_skill,#wrap_works{
+   #wrap_info,#wrap_experience,#wrap_hobbies,#wrap_skill,#wrap_works,#wrap_experience{
     padding: 30px;
   }
   
@@ -184,7 +183,7 @@ export default {
   .info-wrap > .info_content{
     width: 50%;
   }
-  #wrap_info,#wrap_experience,#wrap_hobbies,#wrap_skill,#wrap_works{
+  #wrap_info,#wrap_experience,#wrap_hobbies,#wrap_skill,#wrap_works,#wrap_experience{
     padding: 30px;
   }
 }

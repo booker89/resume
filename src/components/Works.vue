@@ -76,6 +76,7 @@
 .description p {
   position: relative;
   margin: 1rem 0 0;
+  text-indent: -0.7rem;
 }
 @media screen and (max-width: 767px){
   .blog-card{

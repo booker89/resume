@@ -1,6 +1,6 @@
 <template>
   <div>
-    僅個人練習使用
+    僅做為個人使用，非商業用途。
   </div>
 </template>
 
