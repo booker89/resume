@@ -7,7 +7,7 @@
         <div class="photo" :style="worksImg(work.img)"/>
       </div>
       <div class="description">
-        <h1>{{work.title}}{{work.id}}</h1>
+        <h1>{{work.title}}</h1>
         <p>{{work.li1}}</p>
         <p>{{work.li2}}</p>
         <p>{{work.li3}}</p>
@@ -94,6 +94,9 @@
   .description{
     width: 100%
   }
+  .description h1{
+    font-size: 24px;
+  }
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .blog-card{
@@ -106,6 +109,7 @@
   .description{
     width: 100%
   }
+  
 }
 
 </style>

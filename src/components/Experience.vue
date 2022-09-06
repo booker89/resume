@@ -123,6 +123,7 @@
   flex: 1 1 calc(50% - 50px);
   position: relative;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+
 }
 .timeline > .column > .row h3 {
   color: #fff; 
@@ -130,10 +131,11 @@
   padding: 1rem;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  font-size: 24px
 }
 
 .timeline > .column > .row p {
-  padding: 5px 15px;
+  padding: 10px 15px;
   margin: 0;
   color: #000;
   border-bottom-left-radius: 5px;
@@ -227,11 +229,13 @@
   }
   .timeline > .column > .row > .time {
     width: 100%;
-    flex: none
+    flex: none;
+    margin-bottom: 10px
   }
   .timeline > .column > .row > .text {
-    width: 100%
+    width: 100%;
   }
+
   .timeline > .column::before {
     display: none;
   }
